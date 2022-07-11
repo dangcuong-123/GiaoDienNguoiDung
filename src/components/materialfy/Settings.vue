@@ -17,7 +17,7 @@
 				<v-icon> mdi-cog </v-icon>
 			</v-btn>
 		</template>
-		<v-card color="primary" style="z-index: 20">
+		<v-card color="grey lighten-3" style="z-index: 20">
 			<v-container grid-list-xl>
 				<v-layout wrap>
 					<v-flex xs12>
@@ -54,17 +54,12 @@
 						<v-layout justify-center>
 							<!--!<v-btn v-on:click="$emit('persistant-drawer')" label="persistant-drawer" />-->
 							<v-switch v-model="$vuetify.theme.dark" color="secondary">
-								<!-- this uses ternary operator to decide text -->
-								<template v-slot:label>
-									<span class="secondary--text">
-										{{ $vuetify.theme.dark ? 'Dark Mode On' : 'Light Mode On' }}
-									</span>
-								</template>
+			
 							</v-switch>
 						</v-layout>
 						<v-divider class="mt-3" />
 					</v-flex>
-					<v-flex xs12>
+					<!-- <v-flex xs12>
 						<div class="text-center text-body-2 text-uppercase">Sidebar Background Images</div>
 					</v-flex>
 					<v-flex v-for="img in images" :key="img" xs3>
@@ -74,10 +69,10 @@
 							height="120"
 							@click.native="setImage(img)"
 						/>
-					</v-flex>
+					</v-flex> -->
 					<v-flex xs12>
 						<v-btn
-							href="https://github.com/Materialfy/M-Dash"
+							href="https://github.com/dangcuong-123/GiaoDienNguoiDung"
 							target="_blank"
 							color="success"
 							block
@@ -96,29 +91,10 @@
 							Documentation
 						</v-btn>
 					</v-flex>
-					<v-flex xs12>
-						<v-btn href="https://www.materialfy.com/" target="_blank" class="white--text" color="secondary" block>
-							Materialfy.com
-						</v-btn>
-					</v-flex>
+					
 					<v-flex xs12>
 						<div class="text-center text-body-2 text-uppercase">
-							<div class="">Thank You for Sharing!</div>
-
-							<div>
-								<v-btn
-									href="https://twitter.com/Materialfy"
-									target="_blank"
-									color="cyan"
-									class="v-btn-twitter"
-									fab
-									icon
-									small
-									rounded
-								>
-									<v-icon>mdi-twitter</v-icon>
-								</v-btn>
-							</div>
+							<div class="">Knows your limits, but never stop trying to exceed them</div>
 						</div>
 					</v-flex>
 				</v-layout>
