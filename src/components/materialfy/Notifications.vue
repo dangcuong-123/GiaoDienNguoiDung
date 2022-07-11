@@ -28,14 +28,13 @@
 				</v-btn>
 			</v-badge>
 		</template>
-
-		<v-card max-width="400" color="primary">
-			<v-container fill-height>
-				<v-row no-gutters>
+		<v-card max-width="400">
+			<v-container fill-height class="grey lighten-3">
+				<v-row no-gutters >
 					<v-col cols="7" class="mx-auto ">
 						<v-subheader
 							v-if="getNotifHeader"
-							class="d-flex justify-center pa-2 secondary--text "
+							class="d-flex justify-center pa-2"
 						>
 							Refreshed: {{ notificationHeader }}
 						</v-subheader>
@@ -46,7 +45,7 @@
 							<v-list-item :key="value.title" two-line to="Notifications">
 								<v-list-item-avatar :key="value.avatar">
 									<img v-if="value.avatar" :src="value.avatar" />
-									<v-icon v-if="value.icon" large color="secondary">{{value.icon}}</v-icon>
+									<v-icon v-if="value.icon" large>{{value.icon}}</v-icon>
 								</v-list-item-avatar>
 								<v-list-item-content>
 									<v-list-item-title v-html="value.title" />
@@ -56,15 +55,9 @@
 						</template>
 					</v-col>
 				</v-row>
-				<v-row><v-divider class="mb-1 px-2" /></v-row>
 				<v-row>
-					<v-col col="3" class="text-center">
-						<router-link to="notifications">
-							<v-btn small :color="buttonColor"> View all notifications </v-btn>
-						</router-link>
-					</v-col>
-					<v-col col="3" class="text-center">
-						<v-btn small @click="clearNotifs" :color="buttonColor"
+					<v-col col="3" class="text-center grey lighten-2">
+						<v-btn small @click="clearNotifs" color="primary"
 							>Clear Notifications</v-btn
 						>
 					</v-col>
