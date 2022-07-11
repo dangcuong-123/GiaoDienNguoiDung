@@ -3,7 +3,7 @@
 		v-model="drawerShown"
 		:temporary="alwaysClosed"
 		app
-		color="primary"
+		color="grey lighten-3"
 		clipped
 		height="100%"
 	>
@@ -35,10 +35,9 @@
 						<v-switch
 							v-model="alwaysClosed"
 							:label="alwaysClosed ? 'Temp Drawer on' : 'Persistant Drawer on'"
-							color="secondary"
 						>
 							<template v-slot:label>
-								<span class="secondary--text">
+								<span>
 									{{ alwaysClosed ? "Floating Drawer" : "Persistant Drawer" }}
 								</span>
 							</template>
@@ -60,7 +59,7 @@ export default {
 			drawerShown: false, /* controls the opening and closing of drawer */
 			drawer: this.drawerState, /* this is just here for the watcher to wrok */
 			colorWatch: this.color, /* this is just here for the color watcher to wrok */
-			activeColor: "secondary",
+			activeColor: "primary",
 			alwaysClosed: true, /* controls if side drawer is in temp mode or not */
 			links: [
 				/* builds the list of links using v-for and this array */
