@@ -1,6 +1,6 @@
 <template>
 	<!-- userSnippet.vue menu -->
-	<v-card color="primary" min-width="250">
+	<v-card color="#EEEEEE" min-width="250">
 		<v-container>
 			<v-row justify="center" class="mb-1">
 				<v-col cols="3" justify-center>
@@ -41,16 +41,16 @@
 				<v-row
 					justify="center"
 					:style="
-						$vuetify.theme.dark ? 'background:#757575 ' : 'background:#78909C'
+						$vuetify.theme.dark ? 'background:#FFFFFF ' : 'background:#E0E0E0'
 					"
 				>
 					<v-col class="d-flex justify-center">
 						<router-link to="user">
-							<v-btn :color="buttonColor">Profile</v-btn>
+							<v-btn color="light-green">Profile</v-btn>
 						</router-link>
 					</v-col>
 					<v-col class="d-flex justify-center">
-						<v-btn icon :color="buttonColor" block @click="logout">
+						<v-btn color="light-green" block @click="logout">
 							Logout
 							<v-icon >mdi-power</v-icon>
 						</v-btn>
