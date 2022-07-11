@@ -66,8 +66,27 @@ export default {
 				{
 					to: "/",
 					icon: "mdi-view-dashboard",
-					text: "Home",
-					
+					text: "Dash board",
+				},
+				{
+					to: "/data-tables",
+					icon: "mdi-application",
+					text: "Work Assign",
+				},
+				{
+					to: "/table-list",
+					icon: "mdi-application-cog",
+					text: "KPI",
+				},
+				{
+					to: "/cardsview",
+					icon: "mdi-badge-account-horizontal-outline",
+					text: "HR Management",
+				},
+				{
+					to: "/notifications",
+					icon: "mdi-bell",
+					text: "Notifications",
 				},
 				{
 					to: "/user",
@@ -75,29 +94,9 @@ export default {
 					text: "User Profile",
 				},
 				{
-					to: "/table-list",
-					icon: "mdi-application",
-					text: "Basic Tables",
-				},
-				{
-					to: "/data-tables",
-					icon: "mdi-application-cog",
-					text: "CRUD Data Tables",
-				},
-				{
-					to: "/cardsview",
-					icon: "mdi-badge-account-horizontal-outline",
-					text: "Card Types",
-				},
-				{
 					to: "/maps",
 					icon: "mdi-map-marker",
 					text: "Maps",
-				},
-				{
-					to: "/notifications",
-					icon: "mdi-bell",
-					text: "Notifications",
 				},
 			],
 		};
