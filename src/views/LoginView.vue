@@ -4,9 +4,9 @@
 	<v-container fill-height fluid>
 		<v-row justify="center">
 			<v-col class="d-flex justify-center">
-				<v-card elevation="12" min-width="300" width="500" color="secondary">
-					<v-toolbar color="primary">
-						<v-toolbar-title>M-Dashboard</v-toolbar-title>
+				<v-card elevation="12" min-width="300" width="500">
+					<v-toolbar color="light-green">
+						<v-toolbar-title>FARM</v-toolbar-title>
 						<v-spacer />
 					</v-toolbar>
 					<v-card-text>

@@ -7,7 +7,7 @@
 		<!-- controls the sidebar colapsing-->
 		<v-app-bar-nav-icon @click="drawerButton" />
 		<router-link to="/">
-			<v-app-bar-title>
+			<v-app-bar-title class="black--text">
 				{{ title }}
 			</v-app-bar-title>
 		</router-link>
@@ -40,7 +40,7 @@
 		data() {
 			return {
 				//if the app is on mobile devices it changes the title
-				title: this.$vuetify.breakpoint.mobile ? ' M-Dashboard' : 'M-Dashboard by Materialfy',
+				title: this.$vuetify.breakpoint.mobile ? 'FARM' : 'FARM',
 				group: null,
 				message: null,
 				btnColor: 'tertiary',
