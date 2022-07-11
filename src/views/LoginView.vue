@@ -5,8 +5,9 @@
 		<v-row justify="center">
 			<v-col class="d-flex justify-center">
 				<v-card elevation="12" min-width="300" width="500">
-					<v-toolbar color="light-green">
-						<v-toolbar-title>FARM</v-toolbar-title>
+					<v-toolbar color="light-green darkten-1">
+						<v-spacer></v-spacer>
+						<v-toolbar-title >FARM</v-toolbar-title>
 						<v-spacer />
 					</v-toolbar>
 					<v-card-text>
@@ -38,8 +39,8 @@
 					</v-card-text>
 					<v-divider class="mt-5" />
 					<v-card-actions>
-						<v-spacer />
-						<v-btn align-center justify-center color="tertiary" @click="login"> Login </v-btn>
+						<v-spacer/>
+						<v-btn align-center justify-center color="light-green darkten-1" @click="login"> Login </v-btn>
 					</v-card-actions>
 					<v-snackbar v-model="snackbar" :color="color" :top="true">
 						{{ errorMessages }}
