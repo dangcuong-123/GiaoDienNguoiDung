@@ -2,7 +2,6 @@
 depending on if you are logged in or not , 
 so that is what ExternalView and DashboardView are for. LoginView renders in Externalview-->
 <template>
-
     <transition mode="out-in">
       <router-view />
     </transition>
@@ -15,6 +14,7 @@ so that is what ExternalView and DashboardView are for. LoginView renders in Ext
 import Vue from "vue";
 import * as Sentry from '@sentry/vue'
 import { Integrations } from '@sentry/tracing'
+
 
 Sentry.init({
 	Vue,
@@ -29,7 +29,8 @@ Sentry.init({
 })
 
 export default {
-  name: 'App',
+  
+  name: 'app',
   created: function () {
     this.$http.interceptors.response.use(
       (response) => {

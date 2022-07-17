@@ -75,14 +75,6 @@
 				</MaterialfyColorCard>
 			</v-col>
 		</v-row>
-		<!-- FOURTH ROW with calendar -->
-		<v-row class="ma-3 d-flex align-start justify-center">
-			<v-col md="9">
-				<v-responsive :aspect-ratio="16 / 9">
-					<MaterialfyCalendar />
-				</v-responsive>
-			</v-col>
-		</v-row>
 	</v-container>
 </template>
 

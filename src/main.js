@@ -8,8 +8,9 @@ import App from "./App";
 import i18n from "@/i18n";
 import router from "@/router";
 import store from "@/store";
-import { genericApi } from './plugins/axios'
-import vuetify from './plugins/vuetify'
+import { genericApi } from "./plugins/axios";
+import vuetify from "./plugins/vuetify";
+
 
 // makes genericApi common base instance axios the default http handler
 Vue.prototype.$http = genericApi;
@@ -23,9 +24,9 @@ Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
-	i18n,
-	router,
-	store,
-	vuetify,
-	render: (h) => h(App),
+  i18n,
+  router,
+  store,
+  vuetify,
+  render: (h) => h(App),
 }).$mount("#app");
