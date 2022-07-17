@@ -22,6 +22,7 @@ Vue.use(Vuex);
 
 // Create a new store
 const store = new Vuex.Store({
+	
 	actions,
 	getters,
 	//modules object from modules/index.js

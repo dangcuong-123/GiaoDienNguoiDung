@@ -11,7 +11,7 @@
 			return {
 				series: [44, 55, 41, 17, 15],
 				chartOptions: {
-					colors: ['#008FFB', '#00E396', '#FEB019'],
+					colors: ['#008FFB', '#00E396', '#FEB019', '#795548', '#607D8B'],
 					animations: {
 						enabled: true,
 						easing: 'easeinout',
@@ -35,13 +35,13 @@
 						},
 					},
 					title: {
-						text: 'Donut',
+						text: 'Tỉ Lệ Nông Trại',
 						align: 'left',
 						style: {
 							color: '#FFF',
 						},
 					},
-					labels: ['Apple', 'Mango', 'Orange', 'Watermelon', 'Strawberry'],
+					labels: ['Cam', 'Táo', 'Xoài', 'Lợn', 'Gà'],
 					responsive: [
 						{
 							breakpoint: 480,

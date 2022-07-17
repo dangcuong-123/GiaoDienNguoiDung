@@ -49,7 +49,7 @@
 						enabled: false,
 					},
 					title: {
-						text: 'Line Real Time',
+						text: 'Lãi hằng tháng',
 						align: 'left',
 						style: {
 							color: '#FFF',

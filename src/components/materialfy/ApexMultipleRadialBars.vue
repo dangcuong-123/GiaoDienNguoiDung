@@ -9,9 +9,9 @@
 		name: 'ApexMultipleRadialBars',
 		data() {
 			return {
-				series: [76, 67, 61, 90],
+				series: [76, 67, 61, 90, 95],
 				chartOptions: {
-					colors: ['#008FFB', '#00E396', '#FEB019', '#D15F5F'],
+					colors: ['#008FFB', '#00E396', '#FEB019', '#D15F5F', '#000000'],
 					animations: {
 						enabled: true,
 						easing: 'easeinout',
@@ -38,7 +38,7 @@
 						},
 					},
 					title: {
-						text: 'Multiple Radial Bars',
+						text: 'Tỉ lệ Bán Ra/Tổng Số Lượng',
 						align: 'left',
 						style: {
 							color: '#FFF',
@@ -66,11 +66,11 @@
 							},
 						},
 					},
-					labels: ['Vimeo', 'Messenger', 'Facebook', 'LinkedIn'],
+					labels: ['Lợn', 'Gà', 'Xoài', 'Cam', 'Táo'],
 					legend: {
 						show: true,
 						floating: true,
-						fontSize: '16px',
+						fontSize: '14px',
 						position: 'left',
 						offsetX: -20,
 						offsetY: 80,

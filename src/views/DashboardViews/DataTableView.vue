@@ -54,7 +54,7 @@
                 <v-card>
                   <v-card-title>
                     <!-- changes title based on formTitle index, -1 shows 'New item' any other index shows 'Edit Item' as the title -->
-                    <span class="text-h5">{{ formTitle }}</span>
+                    <span class="text-h6">{{ formTitle }}</span>
                   </v-card-title>
                   <!-- you add the fields you want to edit here. the v-model needs to bind to the editedItem, 
 									save() then uses the data in editedItem to create a new item or edit existing -->
@@ -65,19 +65,19 @@
                           <!-- editedItem is set once you open this menu-->
                           <v-text-field
                             v-model="editedItem.first_name"
-                            label="First Name"
+                            label="Nhóm"
                           ></v-text-field>
                         </v-col>
                         <v-col cols="12" sm="6" md="4">
                           <v-text-field
                             v-model="editedItem.last_name"
-                            label="Last Name"
+                            label="Công việc"
                           ></v-text-field>
                         </v-col>
                         <v-col cols="12" sm="6" md="4">
                           <v-text-field
                             v-model="editedItem.email"
-                            label="Email"
+                            label="Địa điểm"
                           ></v-text-field>
                         </v-col>
                         <v-col cols="12" sm="6" md="4">
@@ -318,16 +318,18 @@ export default {
       {
         text: "ID",
         align: "start",
-        sortable: false,
+        // sortable: false,
         value: "id",
       },
-      { text: "Avatar", value: "avatar" },
-      { text: "First Name", value: "first_name" },
-      { text: "Last Name", value: "last_name" },
-      { text: "Email", value: "email" },
-      { text: "Actions", value: "actions", sortable: false },
-      { text: "Admin", value: "isAdmin" },
-      { text: "Active", value: "isActive" },
+      { text: "Nhóm", value: "nhom" },
+      { text: "Công Việc", value: "cong_viec" },
+      { text: "Địa điểm", value: "dia_diem" },
+      { text: "Thời gian bắt đầu", value: "bat_dau" },
+      { text: "Thời gian kết thúc", value: "ket_thuc" },
+      { text: "Chi tiết công việc", value: "chi_tiet"},
+      { text: " ", value: "actions", sortable: false},
+      // { text: "Active", value: "isActive" },
+      // { text: "Active", value: "isActive" },
     ],
     editedIndex: -1,
     //this is the new item created by copying the userList item. its used in editing menu and methods
@@ -384,12 +386,26 @@ export default {
   methods: {
     //uses axios to send get request to api in genericAPI
     getusernames() {
-      genericApi
-        .get(this.apiEndpoint)
-        .then((response) => {
-          this.userList = response.data.data;
-        })
-        .catch((error) => console.log(error));
+      //  { text: "Nhóm", value: "nhom" },
+      // { text: "Công Việc", value: "cong_viec" },
+      // { text: "Địa điểm", value: "dia_diem" },
+      // { text: "Thời gian bắt đầu", value: "bat_dau" },
+      // { text: "Thời gian kết thúc", value: "ket_thuc" },
+      // { text: "Chi tiết công việc", value: "chi_tiet"},
+      // { text: " ", value: "actions", sortable: false},
+      this.userList = [{id: "1", nhom: "1", cong_viec: "Dọn chuồng lợn",dia_diem: "Chuồng lợn số 2", bat_dau: "", ket_thuc: "", chi_tiet: ""},
+      { text: "First Name", value: "first_name" },
+      { text: "Last Name", value: "last_name" },
+      { text: "Email", value: "email" },
+      { text: "Actions", value: "actions", sortable: false },
+      { text: "Admin", value: "isAdmin" },
+      { text: "Active", value: "isActive" },]
+      // genericApi
+      //   .get(this.apiEndpoint)
+      //   .then((response) => {
+      //     this.userList = response.data.data;
+      //   })
+      //   .catch((error) => console.log(error));
       genericApi
         .get(this.apiEndpoint2)
         .then((response) => {

@@ -9,21 +9,15 @@
 		name: 'ApexPolarMap',
 		data() {
 			return {
-				series: [14, 23, 21, 17, 15, 10, 12, 17, 21],
+				series: [60, 40, 30],
 				chartOptions: {
 					labels: [
-						'GitHub',
-						'Facebook',
-						'Twitter',
-						'WhatsApp',
-						'Linkedin',
-						'Messenger',
-						'Bitbucket',
-						'Hubstaff',
-						'Jira',
+						'Hoàn Thành',
+						'Đang thực hiện',
+						'Chờ phê duyêt',
 					],
 					title: {
-						text: 'Polar Area',
+						text: 'Trạng Thái Công Việc',
 						align: 'left',
 						style: {
 							color: '#FFF',
