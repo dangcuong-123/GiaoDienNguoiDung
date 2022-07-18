@@ -10,12 +10,8 @@
 					</span>
 				</div>
 				<v-spacer />
-				<span class="font-weight-light copyright">
-					&copy;
-					{{ new Date().getFullYear() }}
-					M-Dashboard by
-					<a href="Materialfy.com" target="_blank">Materialfy</a>, crafted with
-					Vuetify
+				<span class="font-weight-light">
+					Farm management by group 10
 					<v-icon color="tertiary" size="17">mdi-heart</v-icon>
 				</span>
 			</v-row>
