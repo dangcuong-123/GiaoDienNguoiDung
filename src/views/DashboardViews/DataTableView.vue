@@ -7,7 +7,7 @@
         <v-sheet color="background">
           <header>
             <span class="text-h3 text-uppercase d-flex text-center" style="color: #ffc107"
-              >Work Assign
+              >Giao Việc
             </span>
           </header>
         </v-sheet>

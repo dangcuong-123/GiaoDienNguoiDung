@@ -4,7 +4,6 @@
       <v-data-table
         :headers="headers"
         :items="kpiStatus"
-        item-key="name"
         class="elevation-1 pa-6"
       >
         <template v-slot:top>
@@ -217,7 +216,7 @@ export default {
       return [
         {
           text: "Nhóm",
-          align: "left",
+          align: "start",
           sortable: false,
           value: "name",
           filter: this.nameFilter,

@@ -71,7 +71,7 @@ export default {
 				{
 					to: "/data-tables",
 					icon: "mdi-application",
-					text: "Work Assign",
+					text: "Giao việc",
 				},
 				{
 					to: "/table-list",
@@ -81,12 +81,12 @@ export default {
 				{
 					to: "/cardsview",
 					icon: "mdi-badge-account-horizontal-outline",
-					text: "HR Management",
+					text: "Quản lý nhân sự",
 				},
 				{
 					to: "/notifications",
 					icon: "mdi-bell",
-					text: "Notifications",
+					text: "Giao Việc (tổ trưởng)",
 				},
 				{
 					to: "/user",
